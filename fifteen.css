@@ -1,0 +1,45 @@
+/*
+	Styles the page into a simple and easy to use format and sets the region 
+	that the puzzle board occupies. It also styles the individual puzzle pieces.
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Bubblegum+Sans');
+
+body {
+	margin: auto;
+	width: 80%;
+	font-size: 14pt;
+	font-family: 'Bubblegum Sans', cursive;
+	text-align: center;
+}
+
+#puzzle-area {
+	position: relative;
+	width: 400px;
+	height: 400px;
+	margin: auto;
+}
+
+.puzzle-piece {
+	display: table-cell;
+	vertical-align: middle;
+	position: absolute;
+	width: 90px;
+	height: 90px;
+	font-size: 40pt;
+	text-align: center;
+	border-style: solid;
+	border-width: 5px;
+}
+
+.puzzle-piece {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.highlighted {
+	border-color: red;
+	cursor: pointer;
+	color: red;
+}
